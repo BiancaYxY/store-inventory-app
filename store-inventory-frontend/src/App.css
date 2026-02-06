@@ -1,0 +1,79 @@
+:root {
+  --bg: #0f172a;          /* fundal */
+  --card: #111827;        /* panouri */
+  --text: #e5e7eb;        /* text */
+  --muted: #9ca3af;       /* text secundar */
+  --border: #334155;      /* border */
+  --accent: #38bdf8;      /* accent (blue) */
+  --accent2: #22c55e;     /* optional */
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, Arial;
+}
+
+.app {
+  padding: 24px;
+}
+
+h1 {
+  font-size: 64px;
+  margin: 0 0 24px 0;
+  letter-spacing: -1px;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.tabBtn {
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.05);
+  color: var(--text);
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.15s ease-in-out;
+}
+
+.tabBtn:hover {
+  background: rgba(255,255,255,0.12);
+  transform: translateY(-1px);
+}
+
+.tabBtn.active {
+  border-color: var(--accent);
+  background: rgba(56,189,248,0.15);
+  color: white;
+  box-shadow: 0 0 0 3px rgba(56,189,248,0.15);
+}
+
+/* tabel mai frumos */
+table {
+  border-collapse: collapse;
+  margin-top: 12px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+th {
+  background: rgba(255,255,255,0.06);
+  text-align: left;
+}
+
+tr:hover td {
+  background: rgba(255,255,255,0.04);
+}
